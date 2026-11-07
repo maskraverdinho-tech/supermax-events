@@ -1,142 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/main.css" />
-
-    <title>Frontend Dev Course</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <img src="images/logo.svg" alt="26andfour logo" class="logo" />
-
-        <nav>
-          <a href="#" class="hide-desktop">
-            <img
-              src="images/ham.svg"
-              alt="toggle menu"
-              class="menu"
-              id="menu"
-            />
-          </a>
-          <ul class="show-desktop hide-mobile" id="nav">
-            <li id="exit" class="exit-btn hide-desktop">
-              <img src="images/exit.svg" alt="exit menu" />
-            </li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section>
-        <img src="images/server.svg" alt="server graphic" class="server" />
-
-        <h1>Web Hosting for the Modern Era</h1>
-        <p class="subhead">Go serverless and pay only for what you use.</p>
-
-        <img
-          src="images/scroll.svg"
-          alt="scroll down"
-          class="scroll hide-mobile show-desktop"
-        />
-      </section>
-    </div>
-
-    <div class="blue-container">
-      <div class="container">
-        <ul>
-          <li>
-            <img src="images/icon-1.svg" alt="Calender icon" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </li>
-          <li>
-            <img src="images/icon-2.svg" alt="Calender icon" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </li>
-          <li>
-            <img src="images/icon-3.svg" alt="Calender icon" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="gray-container">
-      <div class="container">
-        <ul>
-          <li>
-            <figure>
-              <img src="images/user1.png" alt="User testimonial picture" />
-              <blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-              </blockquote>
-              <figcaption>- Jane Doe</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="images/user2.png" alt="User testimonial picture" />
-              <blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-              </blockquote>
-              <figcaption>- John Doe</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container">
-      <h2>Start your free trial now!</h2>
-      <a href="#" class="cta">Get Started</a>
-    </div>
-
-    <footer>
-      <div class="footer-container">
-        <div class="container">
-          <a href="#">
-            <img src="images/logo-white.svg" alt="logo" class="logo" />
-          </a>
-          <p>Melrose Place, 90210<br />USA</p>
-          <ul class="footer-links">
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Policy</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      var menu = document.getElementById("menu");
-      var nav = document.getElementById("nav");
-      var exit = document.getElementById("exit");
-
-      menu.addEventListener("click", function(e) {
-        nav.classList.toggle("hide-mobile");
-        e.preventDefault();
-      });
-
-      exit.addEventListener("click", function(e) {
-        nav.classList.add("hide-mobile");
-        e.preventDefault();
-      });
-    </script>
-  </body>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SuperMAX Events: tecnologia e acessórios para o seu dia a dia.">
+<meta name="theme-color" content="#f7f9fc">
+<title>SuperMAX Events | Tecnologia para o seu dia</title>
+<style>
+:root{--ink:#101828;--muted:#667085;--blue:#2563eb;--blue2:#1d4ed8;--line:#e6eaf0;--bg:#f7f9fc;--white:#fff;--soft:#eef4ff;--shadow:0 14px 40px rgba(16,24,40,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.topbar{background:#101828;color:#e8eef8;text-align:center;padding:9px 16px;font-size:12px;letter-spacing:.04em}
+header{background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:22px;font-weight:900;letter-spacing:-.06em;white-space:nowrap}.logo span{color:var(--blue)}.logo small{display:block;font-size:9px;letter-spacing:.24em;color:var(--muted);font-weight:700;margin-top:1px}
+.links{display:flex;gap:28px;color:#475467;font-size:14px;font-weight:650}.links a:hover{color:var(--blue)}
+.actions{display:flex;align-items:center;gap:12px}.search{width:210px;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:#fff;outline:none}.search:focus{border-color:var(--blue)}.cart{border:0;background:var(--soft);color:var(--blue);padding:10px 15px;border-radius:999px;font-weight:800;cursor:pointer}
+.hero{padding:52px 0 34px}.hero-card{background:linear-gradient(110deg,#f0f5ff 0%,#fff 58%,#eaf1ff 100%);border:1px solid #e2eaff;border-radius:28px;min-height:390px;display:grid;grid-template-columns:1.05fr .95fr;overflow:hidden;box-shadow:var(--shadow)}
+.hero-copy{padding:54px 0 50px 54px;align-self:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--blue)}
+h1{font-size:clamp(38px,5vw,62px);line-height:1.02;letter-spacing:-.06em;margin:18px 0}.hero p{color:var(--muted);font-size:16px;line-height:1.7;max-width:470px;margin:0 0 26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:13px 21px;background:var(--blue);color:white;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{background:var(--blue2);transform:translateY(-1px)}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.hero-art{min-height:340px;display:flex;align-items:center;justify-content:center;padding:25px}.hero-art img{width:100%;height:330px;object-fit:cover;border-radius:22px;box-shadow:0 18px 50px rgba(37,99,235,.18)}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 48px}.trust-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 20px;display:flex;gap:12px;align-items:center}.trust-icon{width:38px;height:38px;display:grid;place-items:center;background:var(--soft);border-radius:12px;color:var(--blue);font-size:18px}.trust strong{display:block;font-size:13px}.trust small{color:var(--muted);font-size:11px}
+section{padding:22px 0 48px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}.section-head h2{font-size:30px;letter-spacing:-.045em;margin:7px 0 0}.section-head p{margin:0;color:var(--muted);font-size:14px}
+.filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px}.filter{border:1px solid var(--line);background:#fff;color:#475467;border-radius:999px;padding:9px 15px;font-weight:700;font-size:13px;cursor:pointer}.filter.active,.filter:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;border:1px solid var(--line);border-radius:19px;overflow:hidden;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.photo{height:190px;background:#f1f4f9;position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;transition:transform .35s}.product:hover .photo img{transform:scale(1.05)}.tag{position:absolute;top:12px;left:12px;background:#fff;border-radius:999px;padding:6px 9px;font-size:10px;font-weight:850;color:var(--blue)}.product-info{padding:16px}.category{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800}.product h3{font-size:15px;margin:7px 0 6px}.desc{font-size:12px;color:var(--muted);line-height:1.5;min-height:36px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}.price{font-size:18px;font-weight:900;letter-spacing:-.04em}.add{width:36px;height:36px;border:0;border-radius:50%;background:var(--soft);color:var(--blue);font-size:22px;font-weight:700;cursor:pointer}.add:hover{background:var(--blue);color:#fff}
+.note{background:#fff;border:1px dashed #cbd5e1;border-radius:14px;padding:15px 18px;color:#667085;font-size:12px;line-height:1.6;margin-top:20px}
+.about{background:#101828;color:#fff;border-radius:24px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.about h2{font-size:30px;letter-spacing:-.05em;margin:8px 0 12px}.about p{color:#c5cfdd;line-height:1.7;font-size:14px}.about .eyebrow{color:#91b7ff}.about-box{background:#1b2a42;border:1px solid #34445e;border-radius:18px;padding:22px}.about-box strong{font-size:15px}.about-box p{font-size:12px;margin-bottom:0}
+footer{margin-top:55px;background:#fff;border-top:1px solid var(--line);padding:30px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot p{font-size:12px;color:var(--muted);margin:6px 0}.foot-links{display:flex;gap:18px;font-size:12px;color:#475467}
+.cart-panel{position:fixed;inset:0;background:rgba(16,24,40,.45);z-index:50;display:none;justify-content:flex-end}.cart-panel.open{display:flex}.drawer{width:min(420px,100%);height:100%;background:#fff;padding:24px;display:flex;flex-direction:column;box-shadow:-15px 0 40px rgba(0,0,0,.12)}.drawer-head{display:flex;justify-content:space-between;align-items:center}.drawer h2{margin:0}.close{border:0;background:#f2f4f7;border-radius:50%;width:36px;height:36px;font-size:20px;cursor:pointer}.cart-items{flex:1;overflow:auto;margin:20px 0}.cart-line{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:13px 0;font-size:13px}.cart-line small{display:block;color:var(--muted);margin-top:4px}.remove{border:0;background:none;color:#d92d20;cursor:pointer;font-size:12px}.cart-total{display:flex;justify-content:space-between;font-weight:900;padding:16px 0;border-top:1px solid var(--line)}.empty{color:var(--muted);font-size:14px;text-align:center;padding:40px 10px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:#101828;color:#fff;padding:12px 18px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:60}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.links{display:none}.search{width:160px}.hero-card{grid-template-columns:1fr}.hero-copy{padding:38px 34px 10px}.hero-art{padding:20px 25px 28px}.hero-art img{height:230px}.about{grid-template-columns:1fr}.trust{grid-template-columns:1fr}.trust-item{padding:13px 16px}}
+@media(max-width:520px){.wrap{width:min(100% - 26px,1160px)}.nav{height:66px}.logo{font-size:19px}.search{display:none}.hero{padding-top:22px}.hero-card{border-radius:20px}.hero-copy{padding:32px 23px 5px}h1{font-size:43px}.hero p{font-size:14px}.hero-art img{height:190px}.grid{gap:11px}.photo{height:135px}.product-info{padding:12px}.product h3{font-size:13px}.desc{font-size:11px}.price{font-size:15px}.section-head h2{font-size:25px}.about{padding:25px 21px}.foot{align-items:flex-start;flex-direction:column}.foot-links{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="topbar">SUPERMAX EVENTS · TECNOLOGIA PARA O SEU DIA A DIA</div>
+<header><div class="wrap nav">
+<a class="logo" href="#">SUPER<span>MAX</span><small>EVENTS · TECH STORE</small></a>
+<nav class="links"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+<div class="actions"><input id="search" class="search" type="search" placeholder="Buscar produto..." aria-label="Buscar produto"><button class="cart" id="openCart">Sacola (<span id="cartCount">0</span>)</button></div>
+</div></header>
+<main>
+<div class="wrap">
+<section class="hero" id="inicio"><div class="hero-card">
+<div class="hero-copy"><div class="eyebrow"><span class="dot"></span> Tecnologia que acompanha você</div><h1>Seu próximo upgrade começa aqui.</h1><p>Descubra acessórios e eletrônicos selecionados para deixar sua rotina mais conectada, prática e divertida.</p><a class="btn" href="#produtos">Explorar produtos&nbsp; →</a></div>
+<div class="hero-art"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=85" onerror="this.src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=85'" alt="Mesa moderna com tecnologia e dispositivos eletrônicos"></div>
+</div>
+<div class="trust">
+<div class="trust-item"><div class="trust-icon">⌕</div><div><strong>Produtos selecionados</strong><small>Uma vitrine de tecnologia</small></div></div>
+<div class="trust-item"><div class="trust-icon">♡</div><div><strong>Atendimento próximo</strong><small>Informações claras antes do pedido</small></div></div>
+<div class="trust-item"><div class="trust-icon">▣</div><div><strong>Compra consciente</strong><small>Consulte disponibilidade e condições</small></div></div>
+</div>
+</section>
+<section id="produtos">
+<div class="section-head"><div><div class="eyebrow">Nossa vitrine</div><h2>Encontre seu próximo favorito</h2></div><p>Explore a seleção da SuperMAX.</p></div>
+<div class="filters" id="filters">
+<button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="audio">Áudio</button><button class="filter" data-filter="acessorios">Acessórios</button><button class="filter" data-filter="gamer">Gamer</button><button class="filter" data-filter="wearables">Wearables</button>
+</div>
+<div class="grid" id="productGrid"></div>
+<div class="note">Aviso: esta é uma vitrine demonstrativa. Produtos, imagens e preços são exemplos para personalização e não representam estoque, oferta ou disponibilidade confirmada. Confirme fornecedor, procedência, preço final, garantia e prazo antes de anunciar ou aceitar pedidos.</div>
+</section>
+<section id="sobre"><div class="about">
+<div><div class="eyebrow">Sobre a marca</div><h2>Tecnologia sem complicação.</h2><p>A SuperMAX Events nasce com a proposta de aproximar pessoas de produtos tecnológicos úteis para o cotidiano. Queremos apresentar opções com informação objetiva, atendimento transparente e uma experiência simples.</p></div>
+<div class="about-box"><strong>Nosso compromisso</strong><p>Descrever cada produto com clareza, confirmar disponibilidade antes da venda e apresentar as condições de entrega, troca e garantia sem letras miúdas.</p></div>
+</div></section>
+<section id="contato"><div class="section-head"><div><div class="eyebrow">Fale com a gente</div><h2>Tem alguma dúvida?</h2></div></div><div class="note">Os canais oficiais de atendimento serão adicionados aqui antes do lançamento. Não publique dados pessoais; use um contato comercial apropriado, configurado com ajuda de um responsável.</div></section>
+</div>
+</main>
+<footer><div class="wrap foot"><div><a class="logo" href="#">SUPER<span>MAX</span><small>EVENTS · TECH STORE</small></a><p>© <span id="year"></span> SuperMAX Events. Todos os direitos reservados.</p></div><div class="foot-links"><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div></div></footer>
+<div class="cart-panel" id="cartPanel" role="dialog" aria-modal="true" aria-label="Sacola de compras"><div class="drawer">
+<div class="drawer-head"><h2>Sua sacola</h2><button class="close" id="closeCart" aria-label="Fechar">×</button></div>
+<div class="cart-items" id="cartItems"><div class="empty">Sua sacola está vazia.</div></div>
+<div class="cart-total"><span>Total demonstrativo</span><span id="cartTotal">R$ 0,00</span></div>
+<button class="btn secondary" id="checkout" style="width:100%">Revisar seleção</button>
+<p style="font-size:11px;color:#667085;line-height:1.5">A sacola é apenas uma demonstração. Nenhum pedido ou pagamento será enviado por este site.</p>
+</div></div>
+<div class="toast" id="toast">Adicionado à sacola</div>
+<script>
+const products=[
+{id:1,name:"Fone Bluetooth Pulse",category:"audio",label:"Áudio",description:"Fone sem fio para música e chamadas do dia a dia.",price:129.90,image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85"},
+{id:2,name:"Smartwatch Active",category:"wearables",label:"Wearables",description:"Visual moderno para acompanhar sua rotina.",price:189.90,image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85"},
+{id:3,name:"Teclado Mecânico RGB",category:"gamer",label:"Gamer",description:"Teclas responsivas e iluminação para seu setup.",price:249.90,image:"https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=85"},
+{id:4,name:"Caixa de Som Compacta",category:"audio",label:"Áudio",description:"Som portátil para acompanhar seus momentos.",price:159.90,image:"https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=85"},
+{id:5,name:"Mouse Sem Fio",category:"gamer",label:"Gamer",description:"Formato confortável para trabalho e lazer.",price:89.90,image:"https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=85"},
+{id:6,name:"Carregador USB-C",category:"acessorios",label:"Acessórios",description:"Acessório compacto. Confira compatibilidade antes da compra.",price:69.90,image:"https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=700&q=85"},
+{id:7,name:"Headset Gamer",category:"gamer",label:"Gamer",description:"Conforto e áudio para partidas e chamadas.",price:219.90,image:"https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=700&q=85"},
+{id:8,name:"Óculos Smartwatch",category:"wearables",label:"Wearables",description:"Acessório inteligente para um estilo conectado.",price:199.90,image:"https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=700&q=85"}
+];
+let cart=[];let activeFilter="todos";let searchTerm="";
+const money=n=>n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+function renderProducts(){
+ const list=products.filter(p=>(activeFilter==="todos"||p.category===activeFilter)&&(p.name+" "+p.description+" "+p.label).toLowerCase().includes(searchTerm));
+ document.getElementById("productGrid").innerHTML=list.length?list.map(p=>`<article class="product"><div class="photo"><img loading="lazy" src="${p.image}" alt="${p.name}"><span class="tag">${p.label}</span></div><div class="product-info"><div class="category">${p.label}</div><h3>${p.name}</h3><div class="desc">${p.description}</div><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" data-add="${p.id}" aria-label="Adicionar ${p.name}">+</button></div></div></article>`).join(""):'<p style="color:#667085">Nenhum produto encontrado.</p>';
+ document.querySelectorAll("[data-add]").forEach(b=>b.addEventListener("click",()=>addToCart(Number(b.dataset.add))));
+}
+function addToCart(id){const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});renderCart();const t=document.getElementById("toast");t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1500)}
+function renderCart(){
+ document.getElementById("cartCount").textContent=cart.reduce((a,b)=>a+b.qty,0);
+ const items=document.getElementById("cartItems");
+ if(!cart.length)items.innerHTML='<div class="empty">Sua sacola está vazia.</div>';
+ else items.innerHTML=cart.map(x=>{const p=products.find(y=>y.id===x.id);return `<div class="cart-line"><div><strong>${p.name}</strong><small>${x.qty} × ${money(p.price)}</small></div><div style="text-align:right"><strong>${money(p.price*x.qty)}</strong><br><button class="remove" data-remove="${p.id}">Remover</button></div></div>`}).join("");
+ document.getElementById("cartTotal").textContent=money(cart.reduce((a,x)=>a+products.find(p=>p.id===x.id).price*x.qty,0));
+ document.querySelectorAll("[data-remove]").forEach(b=>b.addEventListener("click",()=>{cart=cart.filter(x=>x.id!==Number(b.dataset.remove));renderCart()}));
+}
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("[data-filter]");if(!b)return;activeFilter=b.dataset.filter;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));renderProducts()});
+document.getElementById("search").addEventListener("input",e=>{searchTerm=e.target.value.toLowerCase().trim();renderProducts()});
+document.getElementById("openCart").onclick=()=>document.getElementById("cartPanel").classList.add("open");
+document.getElementById("closeCart").onclick=()=>document.getElementById("cartPanel").classList.remove("open");
+document.getElementById("cartPanel").addEventListener("click",e=>{if(e.target.id==="cartPanel")e.currentTarget.classList.remove("open")});
+document.getElementById("checkout").onclick=()=>alert("Esta é uma demonstração da loja. Nenhum pedido foi enviado e nenhum pagamento pode ser feito por aqui.");
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();renderCart();
+</script>
+</body>
 </html>
